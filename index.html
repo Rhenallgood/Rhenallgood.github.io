@@ -1,28 +1,159 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link rel="stylesheet" href="./css/aldo.css" />
-	<title> sebut saja judul </title>
-</head>
+<title> This is Title </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/coffeehouse.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
 <body>
-	<h1><strong> IDENTITAS a.k.a BIODATA </strong></h1>
-	<p>Nama   : Rhenaldo Yanuari Arifin</p>
-	<p>TTL    : Rumah Sakit Pindad, Bandung, 23 Januari 2002</p>
-	<p>Alamat : Kp. Benteng RT 03/05, Kec. Cicurug, Kab. Sukabumi, Jawa Barat, Indonesia</p>
-	<p>Status : Single hehehe Pelajar</p>
-	<p>Sekolah: Bogor Vocational Hight School of Chemical Analyst</p>
 
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+    </div>
+  </div>
+</div>
 
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag"> Dianugerahi Ketampanan Yang Haqiqi</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">the<br>Cafe</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">15 Adr street, 5015</span>
+  </div>
+</header>
 
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
 
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT ME</span></h5>
+    <p> Nama Saya Rhenaldo Yanuari Arifin. Saya anak pertama dan satu-satunya dari ayah dan ibu saya, itu artinya saya gapunya adik atau kakak (yaiyalah mas!).</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"Do What You Love and Love What You Do".</i></p>
+      
+    </div>
+    <img src="./Frame/GIMP Rhenaldo XI.6 .png" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>:</strong>23 Januari 2002.</p>
+    <p><strong></strong> Cigombong, Indonesia</p>
+  </div>
+</div>
 
-	<p> <i>"selengkapnya tentang saya yang perlu anda ketahui"  :</i></p> Saya anak pertama dan satu-satunya dari ayah dan ibu saya, itu artinya saya gapunya adik atau kakak (yaiyalah mas!). Dari dulu saya suka sepak bola, bulutangkis dan akhir-akhir ini lagi seneng ngikutin basket. Tapi  karena saya gabisa main bola ataupun basket jadi Bulutangkis cuma satu-satunya olahraga yang sering saya lakukan(itu juga iseng iseng, asal keluar keringet udahan). Oiya saya dari sd udah jadi fansnya Manchester United garis keras lho. Cita-cita saya untuk masa depan, saya ingin menjadi beauty vlogger(tapi boong hiyahiyahiya), sebenernya saya pengen jadi psikolog atau kriminolog gitu biar keren hehehe. Udah lah gitu aja yang bisa saya sampaikan, kurang lebihnya mohon dimaafkan, terima kasih atas perhatiannya. Salam Kecebong
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">ABOUT ME</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Kiri');" id="myLink">
+        <div class="w3-col s6 tablink">Kiri</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Kanan');">
+        <div class="w3-col s6 tablink">Kanan</div>
+      </a>
+    </div>
 
+    <div id="Kiri" class="w3-container menu w3-padding-48 w3-card">
+      <h5> Sekilas Info </h5>
+      <p class="w3-text-grey">Dari dulu saya suka sepak bola, bulutangkis dan akhir-akhir ini lagi seneng ngikutin basket.</p><br>
+    
+      <h5> Duakilas Info </h5>
+      <p class="w3-text-grey">Tapi karena saya gabisa main bola ataupun basket jadi Bulutangkis cuma satu-satunya olahraga yang sering saya lakukan(itu juga iseng iseng, asal keluar keringet udahan).</p><br>
+    
+      <h5> Tigakilas Info </h5>
+      <p class="w3-text-grey">Oiya saya dari sd udah jadi fansnya Manchester United garis keras lho.</p><br>
+    </div>
 
-	<h1><strong><i> INI KARYA FOTO KEHALUAN SAYA </i></strong></h1>
-	<p> ini foto saya bersama idola saya </p>
-	<img src="./img/a.png"></a>
-	<img src="./img/Hobi GIMP Rhenaldo XI.6.png"></a>
-	<img src="./img/Tugas GIF Rhenaldo Yanuari Arifin - XI.6.gif"></a>
+    <div id="Kanan" class="w3-container menu w3-padding-48 w3-card">
+      <h5> FYI </h5>
+      <p class="w3-text-grey">Cita-cita saya untuk masa depan, saya ingin menjadi beauty vlogger(tapi boong hiyahiyahiya)</p><br>
+    
+      <h5>FYI Jilid 2</h5>
+      <p class="w3-text-grey">sebenernya saya pengen jadi psikolog atau kriminolog gitu biar keren hehehe.</p><br>
+    
+    </div>  
+    <img src="./Frame/Tugas GIF Rhenaldo Yanuari Arifin - XI.6.gif" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND ME</span></h5>
+    <p> Jika anda merindukan saya cukup sebut nama saya tiga kali, saya akan datang. Promise</p>
+    <img src="./Frame/Hobi GIMP Rhenaldo XI.6.png" class="w3-image" style="width:100%">
+    <p><span class="w3-tag">PAMUNGKAS!</span>Udah lah gitu aja yang bisa saya sampaikan, kurang lebihnya mohon dimaafkan, terima kasih atas perhatiannya. Salam Kecebong</p>
+    <p><strong> INGIN BERKENALAN?</strong> AYOOO! ISI BIODATA KAMU DI BAWAH INI HAHAHA :</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How old are you?" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
 </body>
 </html>
